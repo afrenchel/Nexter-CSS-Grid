@@ -1,5 +1,6 @@
 *,
-*::before *::after {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -132,7 +133,7 @@ body {
 
 .nav-btn {
   border: none;
-  border-radius: none;
+  border-radius: 0;
   background-color: white;
   height: 2px;
   width: 4.5rem;
@@ -149,7 +150,7 @@ body {
   transform: translateY(-1.5rem);
 }
 .nav-btn::after {
-  transform: translateY(1.5rem);
+  transform: translateY(1.3rem);
 }
 @media only screen and (max-width: 62.5em) {
   .nav-btn {
@@ -191,7 +192,7 @@ body {
   }
 }
 .header__logo {
-  height: 2rem;
+  height: 3rem;
   justify-self: center;
 }
 .header__btn {
